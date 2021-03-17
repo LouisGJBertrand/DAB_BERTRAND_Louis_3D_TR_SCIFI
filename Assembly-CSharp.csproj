@@ -156,6 +156,7 @@
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\WheelEffects.cs" />
+     <Compile Include="Assets\ObjectRotator.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />

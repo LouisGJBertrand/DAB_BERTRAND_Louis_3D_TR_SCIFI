@@ -104,14 +104,18 @@ public class DoorController : Listner
 
     public override void OnGameObjectEvent(object sender, GameBojectEventArgs e)
     {
-        if(!IsOpened)
-        {
+        if (IsLockedInPosition)
+            return;
 
-            DoorSoundEmitter.PlayOneShot(DoorSoundClip);
+        if (ActualOffset != InitialOffset)
+            return;
 
-        }
+        if (IsOpened)
+            return;
 
+        DoorSoundEmitter.PlayOneShot(DoorSoundClip);
         IsOpened = true;
+
     }
 
 }

@@ -10,7 +10,6 @@ public class TanFlickeringLight : MonoBehaviour
     public bool IsFlickeringInverted = true;
 
     public float MaxLightIntensity = 1;
-    public float MinLightIntensity = 0;
 
     public float flicker = 0;
     public float flickerSpeed = 3;
@@ -25,8 +24,8 @@ public class TanFlickeringLight : MonoBehaviour
     void Update()
     {
 
-        Light.intensity = (float)Math.Tan(flicker) * MaxLightIntensity + MinLightIntensity;
-        flicker = (float)((flicker + Time.deltaTime * flickerSpeed) % Math.PI);
+        Light.intensity = (float)Math.Tan(flicker) * MaxLightIntensity;
+        flicker = ((flicker + Time.deltaTime * flickerSpeed) % (float)(Math.PI/2));
 
     }
 }
