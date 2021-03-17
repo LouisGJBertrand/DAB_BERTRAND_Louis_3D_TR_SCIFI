@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084726171255099531}
-  m_LocalRotation: {x: 0.00011226687, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.487}
+  m_LocalRotation: {x: -0.060218543, y: -0.07810627, z: 0.0047441456, w: 0.99511343}
+  m_LocalPosition: {x: 0.45, y: -0.56, z: 0.487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1786823402785127088}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.013, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -6.8410006, y: -9.041, z: 1.088}
 --- !u!108 &3744855410211523608
 Light:
   m_ObjectHideFlags: 0
@@ -492,6 +492,14 @@ MonoBehaviour:
   IsSpotlightOn: 0
   AudioSource: {fileID: 1786823402781654898}
   AudioClip: {fileID: 8300000, guid: f9739dca9d2254f4ca311ec47f5b8e1e, type: 3}
+  IsAffectedByBatery: 1
+  InitialBateryLeft: 100
+  MinBatery: 0
+  MaxBatery: 100
+  BateryLeft: 0
+  BateryDischargeIntesityMultiplier: 1
+  BateryRechargeIntesityMultiplier: 0.5
+  IsLightIntensityAffectedByBatery: 1
 --- !u!1 &3881584617714468781
 GameObject:
   m_ObjectHideFlags: 0

@@ -169,6 +169,7 @@
      <Compile Include="Assets\SCRIPTS\RandomFlickerLightController.cs" />
      <Compile Include="Assets\SCRIPTS\SkyBoxUpdater.cs" />
      <Compile Include="Assets\SCRIPTS\SpotLightController.cs" />
+     <Compile Include="Assets\SCRIPTS\TanFlickeringLight.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\Activator.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\DoorController.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\GameBojectEventArgs.cs" />
