@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioAmbiance.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\MINIFIRST\Components\Crouch.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\MINIFIRST\Components\GroundCheck.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\MINIFIRST\Components\Jump.cs" />
@@ -166,6 +167,7 @@
      <Compile Include="Assets\SCENES\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\SCRIPTS\GameCollider.cs" />
      <Compile Include="Assets\SCRIPTS\SkyBoxUpdater.cs" />
+     <Compile Include="Assets\SpotLightController.cs" />
      <None Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
@@ -733,6 +735,15 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -748,23 +759,14 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder">
- <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
