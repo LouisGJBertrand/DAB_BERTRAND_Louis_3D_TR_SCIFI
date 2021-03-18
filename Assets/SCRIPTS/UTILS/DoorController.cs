@@ -89,6 +89,7 @@ public class DoorController : Listner
 
             if (Math.Abs((TargetOffset - ActualOffset).x) <= 0.0001 || Math.Abs((InitialOffset + ActualOffset).x) <= 0.0001)
                 ActualOffset.x = (float)Math.Round(ActualOffset.x, 3);
+
             if (Math.Abs((TargetOffset - ActualOffset).y) <= 0.0001 || Math.Abs((InitialOffset + ActualOffset).y) <= 0.0001)
                 ActualOffset.y = (float)Math.Round(ActualOffset.y, 3);
 
