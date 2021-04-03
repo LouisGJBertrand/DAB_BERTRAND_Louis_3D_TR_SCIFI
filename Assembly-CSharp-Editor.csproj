@@ -256,6 +256,9 @@
  <Reference Include="UnityEditor.WebGL.Extensions">
  <HintPath>G:/UNITYINSTALLS/2019.4.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/PackageCache/com.unity.render-pipelines.core@7.5.3/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ </Reference>
  <Reference Include="nunit.framework">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
@@ -628,11 +631,20 @@
  <Reference Include="Unity.ProBuilder">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualEffectGraph.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -646,11 +658,32 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualEffectGraph.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

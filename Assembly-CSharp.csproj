@@ -156,7 +156,7 @@
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\WheelEffects.cs" />
-     <Compile Include="Assets\ObjectRotator.cs" />
+     <Compile Include="Assets\LightDoorScript.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -166,16 +166,23 @@
      <Compile Include="Assets\SCENES\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\SCRIPTS\AudioAmbiance.cs" />
+     <Compile Include="Assets\SCRIPTS\CameraFade.cs" />
      <Compile Include="Assets\SCRIPTS\GameCollider.cs" />
+     <Compile Include="Assets\SCRIPTS\GameLevelController.cs" />
+     <Compile Include="Assets\SCRIPTS\LightFlasher.cs" />
+     <Compile Include="Assets\SCRIPTS\ObjectRotator.cs" />
      <Compile Include="Assets\SCRIPTS\RandomFlickerLightController.cs" />
      <Compile Include="Assets\SCRIPTS\SkyBoxUpdater.cs" />
      <Compile Include="Assets\SCRIPTS\SpotLightController.cs" />
      <Compile Include="Assets\SCRIPTS\TanFlickeringLight.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\Activator.cs" />
+     <Compile Include="Assets\SCRIPTS\UTILS\CaptionController.cs" />
+     <Compile Include="Assets\SCRIPTS\UTILS\DoorActivationEventListner.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\DoorController.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\GameBojectEventArgs.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\GameObjectEventHandler.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\Listner.cs" />
+     <Compile Include="Assets\SCRIPTS\UTILS\TextCaptionListner.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\ZoneTriggerGameObjectEventHandler.cs" />
      <None Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Effects\Projectors\Shaders\ProjectorLight.shader" />
@@ -747,11 +754,20 @@
  <Reference Include="Unity.ProBuilder">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualEffectGraph.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -765,11 +781,32 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualEffectGraph.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>E:/Data/ISART/2021/3D/Temps Reel/ProjetUnity/DAB_BERTRAND_Louis_3D_TR_SCIFI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

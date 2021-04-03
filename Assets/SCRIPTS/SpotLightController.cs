@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpotLightController : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class SpotLightController : MonoBehaviour
 
     public bool IsLightIntensityAffectedByBatery = true;
 
+    public Text CaptionTextObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,7 @@ public class SpotLightController : MonoBehaviour
     void Update()
     {
 
+        CaptionTextObject.text = "🔦 " + (int)BateryLeft + "%";
 
         if (Input.GetKeyDown("f"))
         {
