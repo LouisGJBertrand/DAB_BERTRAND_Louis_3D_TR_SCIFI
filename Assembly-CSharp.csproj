@@ -156,7 +156,7 @@
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\GAMEOBJECTS\GAMEMECHANICS\STDASSETS\Vehicles\Car\Scripts\WheelEffects.cs" />
-     <Compile Include="Assets\LightDoorScript.cs" />
+     <Compile Include="Assets\MainMenuController.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SCENES\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -167,8 +167,10 @@
      <Compile Include="Assets\SCENES\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\SCRIPTS\AudioAmbiance.cs" />
      <Compile Include="Assets\SCRIPTS\CameraFade.cs" />
+     <Compile Include="Assets\SCRIPTS\EndCutsceneScript.cs" />
      <Compile Include="Assets\SCRIPTS\GameCollider.cs" />
      <Compile Include="Assets\SCRIPTS\GameLevelController.cs" />
+     <Compile Include="Assets\SCRIPTS\LightDoorScript.cs" />
      <Compile Include="Assets\SCRIPTS\LightFlasher.cs" />
      <Compile Include="Assets\SCRIPTS\ObjectRotator.cs" />
      <Compile Include="Assets\SCRIPTS\RandomFlickerLightController.cs" />
@@ -179,6 +181,8 @@
      <Compile Include="Assets\SCRIPTS\UTILS\CaptionController.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\DoorActivationEventListner.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\DoorController.cs" />
+     <Compile Include="Assets\SCRIPTS\UTILS\ElectricalDoorOpeningController.cs" />
+     <Compile Include="Assets\SCRIPTS\UTILS\EndLevelTrigger.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\GameBojectEventArgs.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\GameObjectEventHandler.cs" />
      <Compile Include="Assets\SCRIPTS\UTILS\Listner.cs" />

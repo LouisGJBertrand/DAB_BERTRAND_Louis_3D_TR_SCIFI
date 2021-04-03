@@ -55,6 +55,12 @@ public class GameLevelController : MonoBehaviour
     {
         ArePlayerControlsLockedValue = ArePlayerControlsLocked;
 
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+
+            timePassed += 20;
+
+        }
 
         if (timePassed < 4 && LastDisplayedCaption != 1)
         {
@@ -123,4 +129,6 @@ public class GameLevelController : MonoBehaviour
         timePassed += Time.deltaTime;
 
     }
+
+
 }
